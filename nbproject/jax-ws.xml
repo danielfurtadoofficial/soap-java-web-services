@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServicoReservar">
+      <implementation-class>WebServices.ServicoReservar</implementation-class>
+    </service>
+    <service name="SystemUsersServices">
+      <implementation-class>WebServices.SystemUsersServices</implementation-class>
+    </service>
+    <service name="ServicoOficina">
+      <implementation-class>WebServices.ServicoOficina</implementation-class>
+    </service>
+    <service name="ServicoTarefas">
+      <implementation-class>WebServices.ServicoTarefas</implementation-class>
+    </service>
+    <service name="ServicoMarcacoesVeiculos">
+      <implementation-class>WebServices.ServicoMarcacoesVeiculos</implementation-class>
+    </service>
+    <service name="ServicoCliente">
+      <implementation-class>WebServices.ServicoCliente</implementation-class>
+    </service>
+    <service name="ServicoServico">
+      <implementation-class>WebServices.ServicoServico</implementation-class>
+    </service>
+    <service name="ServicoPecas">
+      <implementation-class>WebServices.ServicoPecas</implementation-class>
+    </service>
+    <service name="ServicoMecanico">
+      <implementation-class>WebServices.ServicoMecanico</implementation-class>
+    </service>
+    <service name="ServicoFaturas">
+      <implementation-class>WebServices.ServicoFaturas</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="GetSystemUsers">
+      <wsdl-url>http://localhost:8080/ProjOficina/GetSystemUsers?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/ProjOficina/GetSystemUsers.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">WebServices_client</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/ProjOficina/GetSystemUsers?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>WebServices_client</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>
